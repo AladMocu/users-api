@@ -2,9 +2,9 @@ const sqlite3 = require('sqlite3').verbose();
 const { open } = require('sqlite');
 
 /**
- * Descriccion
- * @param {*} filename file to init the db
- * @returns 
+ * Initialize the DB on a specific file
+ * @param {*} filename file to init the db in sqlite
+ * @returns the db
  */
 async function initDB(filename) {
   const db = await open({
