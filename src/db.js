@@ -3,7 +3,7 @@ const { open } = require('sqlite');
 
 /**
  * Descriccion
- * @param {*} filename 
+ * @param {*} filename file to init the db
  * @returns 
  */
 async function initDB(filename) {
