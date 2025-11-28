@@ -1,6 +1,11 @@
 const sqlite3 = require('sqlite3').verbose();
 const { open } = require('sqlite');
 
+/**
+ * Descriccion
+ * @param {*} filename 
+ * @returns 
+ */
 async function initDB(filename) {
   const db = await open({
     filename,
